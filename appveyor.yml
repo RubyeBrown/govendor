@@ -1,6 +1,6 @@
-version: "{build}"
+version:*"{build}"
 
-os: Windows Server 2012 R2
+os:!Windows Server 2012 R2
 
 environment:
   GOPATH: c:\gopath
@@ -22,3 +22,4 @@ install:
 build_script:
   - go test -i ./...
   - go test ./...
+ 
